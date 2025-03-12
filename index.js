@@ -90,9 +90,92 @@ let users = [
   
 
 
+  let bank = [
+    {
+      name: "Grace Lee",
+      pictures: ["image17.jpg", "image18.jpg"],
+      email: "gracelee@example.com",
+      phone_number: "+7788990011",
+      bank_name: "Westside Bank",
+      nin: "NIN778899001"
+    },
+    {
+      name: "Grace Lee",
+      pictures: ["image17.jpg", "image18.jpg"],
+      email: "gracelee@example.com",
+      phone_number: "+7788990011",
+      bank_name: "Westside Bank",
+      nin: "NIN778899001"
+    },
+    {
+      name: "Grace Lee",
+      pictures: ["image17.jpg", "image18.jpg"],
+      email: "gracelee@example.com",
+      phone_number: "+7788990011",
+      bank_name: "Westside Bank",
+      nin: "NIN778899001"
+    },
+    {
+      name: "Grace Lee",
+      pictures: ["image17.jpg", "image18.jpg"],
+      email: "gracelee@example.com",
+      phone_number: "+7788990011",
+      bank_name: "Westside Bank",
+      nin: "NIN778899001"
+    }
+  ]
+
+
+  let country = [
+    {
+      name: "Grace Lee",
+      pictures: ["image17.jpg", "image18.jpg"],
+      email: "gracelee@example.com",
+      phone_number: "+7788990011",
+      bank_name: "Westside Bank",
+      nin: "NIN778899001"
+    },
+    {
+      name: "Grace Lee",
+      pictures: ["image17.jpg", "image18.jpg"],
+      email: "gracelee@example.com",
+      phone_number: "+7788990011",
+      bank_name: "Westside Bank",
+      nin: "NIN778899001"
+    },
+    {
+      name: "Grace Lee",
+      pictures: ["image17.jpg", "image18.jpg"],
+      email: "gracelee@example.com",
+      phone_number: "+7788990011",
+      bank_name: "Westside Bank",
+      nin: "NIN778899001"
+    },
+    {
+      name: "Grace Lee",
+      pictures: ["image17.jpg", "image18.jpg"],
+      email: "gracelee@example.com",
+      phone_number: "+7788990011",
+      bank_name: "Westside Bank",
+      nin: "NIN778899001"
+    }
+  ]
+
+
+  app.get("/api1", (req, res) => {
+    res.send(users)
+  })
+  app.get("/api2", (req, res) => {
+    res.send(bank)
+  })
+  app.get("/api3", (req, res) => {
+    res.send(country)
+  })
+
 
 app.get("/", (req, res) => {
-  res.send("Hello, World!");
+  // res.send("Hello, World!");
+  res.sendFile(__dirname  + "/public/index.html")
 });
 
 app.get("/api", (req, res) => {
