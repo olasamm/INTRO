@@ -174,8 +174,8 @@ let users = [
 
 
 app.get("/", (req, res) => {
-  // res.send("Hello, World!");
   res.sendFile(__dirname  + "/public/index.html")
+  res.send("Hello, World!");
 });
 
 // app.get("/api", (req, res) => {
